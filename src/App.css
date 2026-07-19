@@ -1,11 +1,23 @@
 body {
   margin: 0;
+  display: block;
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #ffffff;
   color: #242424;
   line-height: 1.6;
   scroll-behavior: smooth;
   font-size: 0.9rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-width: 0;
 }
 
 html:lang(zh-CN) body {
@@ -153,6 +165,8 @@ nav a:hover {
     width: 100%;
     padding: 0;
     text-align: center;
+    max-height: none;
+    overflow: visible;
   }
 
   .right-content {
@@ -163,9 +177,16 @@ nav a:hover {
   }
 
   .content-inner {
+    width: 100%;
     max-width: none;
     margin: 0 auto;
     padding: 0 1rem;
+  }
+
+  .content-inner > * {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   section {

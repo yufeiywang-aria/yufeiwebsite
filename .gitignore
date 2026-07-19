@@ -34,6 +34,7 @@ Thumbs.db
 
 # Local preview captures
 preview-*.png
+mobile-*.png
 
 # Large local source media and unused template assets
 /public/assets/project-files/humen-ferry-video.mov

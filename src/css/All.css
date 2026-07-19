@@ -811,6 +811,137 @@ strong {
     }
 }
 
+/* ===== Mobile containment and two-column snapshot wall ===== */
+@media (max-width: 560px) {
+    .card,
+    .about,
+    .publications,
+    .education-list,
+    .education-item,
+    .publication-card,
+    .publication-content,
+    .selected-project-card,
+    .selected-project-content,
+    .timeline-container,
+    .timeline-item,
+    .timeline-content,
+    .exp-container,
+    .snapshots-card,
+    .snapshots-wall {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .education-item,
+    .timeline-content {
+        overflow: visible;
+        padding: 0.9rem;
+    }
+
+    .education-school,
+    .education-details,
+    .education-courses,
+    .education-courses ul,
+    .publication-venue,
+    .publication-tags,
+    .publication-links,
+    .experience-tags {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .education-university,
+    .education-degree,
+    .education-courses li,
+    .publication-title,
+    .selected-project-summary,
+    .exp-organization-name,
+    .exp-details li,
+    .role-tag,
+    .publication-links a {
+        overflow-wrap: anywhere;
+        word-break: normal;
+        white-space: normal;
+    }
+
+    .education-courses li {
+        max-width: 100%;
+    }
+
+    .publication-card,
+    .selected-project-card {
+        align-items: stretch;
+    }
+
+    .publication-image,
+    .selected-project-image,
+    .selected-project-cover-video {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+        margin: 0.5rem 0 0;
+        object-fit: cover;
+    }
+
+    .publication-content,
+    .selected-project-content {
+        width: 100%;
+        min-height: 0;
+        padding: 0.75rem 0 0.9rem;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+    }
+
+    .snapshots-wall {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem 0.7rem;
+        justify-content: stretch;
+        padding: 1rem 0.1rem 0.8rem;
+    }
+
+    .snapshot-polaroid {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 8px 8px 10px;
+    }
+
+    .snapshots-card .snapshot-photo-box {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        aspect-ratio: 4 / 3;
+    }
+
+    .snapshots-card .snapshot-photo {
+        width: 100% !important;
+        min-width: 0;
+        max-width: 100% !important;
+        height: 100% !important;
+        min-height: 0;
+        max-height: none !important;
+    }
+
+    .snapshot-caption {
+        height: auto;
+        min-height: 3.2em;
+        margin-top: 7px;
+        padding: 0 0.1rem;
+        font-size: 0.7rem;
+        overflow: visible;
+    }
+}
+
 /* ===== Pink website final overrides ===== */
 body,
 .App {

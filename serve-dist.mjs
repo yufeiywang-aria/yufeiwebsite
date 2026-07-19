@@ -4,7 +4,7 @@ import { extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(fileURLToPath(new URL(".", import.meta.url)), "dist");
-const base = "/yufei-website-pink";
+const base = "/yufeiwebsite";
 const port = 5175;
 
 const types = {

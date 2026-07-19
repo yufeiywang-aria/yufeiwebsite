@@ -1,0 +1,209 @@
+.hero-left {
+    width: 256px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-pic{
+    display: block;
+    width: 62%;
+    margin: 0 auto 0.82rem;
+    aspect-ratio: 4 / 5;
+    object-fit: contain;
+    object-position: center top;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(36, 36, 36, 0.045);
+    background: #FFF6F8;
+}
+.hero-grid{
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .hero-left {
+        width: min(300px, 100%);
+        margin: 0 auto;
+    }
+
+    .profile-pic{
+        width: 56%;
+        margin-top: 4rem;
+        object-fit: contain;
+        object-position: center top;
+    }
+}
+
+.hero-meta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meta-name{
+    font-weight: 900;
+    font-size: 1.28rem;
+    font-style: italic;
+    white-space: nowrap;
+    color: #242424;
+}
+
+.meta-name-cn {
+    margin-left: 0.2rem;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+.meta-cn,
+.meta-headline {
+    color: #888;
+    font-size: 0.76rem;
+}
+
+.meta-headline {
+    margin-top: 0.25rem;
+    color: #8f8f8f;
+    font-size: 0.6rem;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.meta-degree {
+    margin-top: 0.26rem;
+    color: #333;
+    font-size: 0.84rem;
+    font-style: normal;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.meta-roles {
+    margin-top: 0.58rem;
+    color: #666;
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+.meta-role-line {
+    white-space: nowrap;
+}
+
+.meta-email-line {
+    margin-top: 0.62rem;
+    color: #F42E7A;
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+.meta-email-line a {
+    color: #F42E7A;
+    font-weight: 500;
+}
+
+.meta-description{
+    margin: 0.8rem;
+    font-size: 0.82rem;
+    /*color: #F42E7A;*/
+    color: #acacac;
+    text-align: center;
+}
+
+.meta-description a {
+    color: #F42E7A;
+}
+
+.skills-title {
+    margin-top: 0.5rem;
+    color: #9a9a9a;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.skills-list {
+    max-width: 230px;
+    margin-top: 0.12rem;
+    color: #9f9f9f;
+    font-size: 0.61rem;
+    line-height: 1.35;
+}
+
+.skills-line {
+    display: block;
+    white-space: nowrap;
+}
+.meta-linkitem{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    background-color: #fff6f8;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 12px;
+    color: #F42E7A;
+    font-family: 'Sigmar One', serif;
+    font-size: 0.83rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11.5rem;
+}
+
+.meta-actions {
+    margin-top: 0.7rem;
+}
+
+.contact-small{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.meta-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meta-secondary-links {
+    flex-direction: row;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 14rem;
+    margin-top: 0.86rem;
+}
+
+.meta-secondary-links .meta-linkitem {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    margin-bottom: 0;
+    padding: 0.46rem 0.85rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Sigmar One', serif;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.icon-link{
+    font-size: 1.4rem;
+    color: #F42E7A;
+}
+.small-text{
+    color: #acacac;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.68rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0.88rem;
+}

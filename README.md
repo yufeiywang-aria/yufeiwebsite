@@ -26,7 +26,7 @@ npm run build
 
 After GitHub Pages deployment, the site is available at:
 
-https://yufeiywang-aria.github.io/yufei-website-pink/
+https://yufeiywang-aria.github.io/yufeiwebsite/
 
 ## Author
 
